@@ -12,6 +12,9 @@ const item2 = await createitem("hotwheels lamborghini", 39.99, 3);
 //adicione dois itens ao carrinho
 await cartService.addItem(myCart, item1);
 await cartService.addItem(myCart, item2, myWhishlist);
+
+await cartService.removeItem(myCart, 1)
+
 await cartService.dispayCart(myCart);
 
 //delete dois itens do carrinho
