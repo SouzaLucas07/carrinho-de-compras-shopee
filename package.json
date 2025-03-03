@@ -1,0 +1,21 @@
+{
+  "name": "carrinho-de-compras-shopee",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SouzaLucas07/carrinho-de-compras-shopee.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SouzaLucas07/carrinho-de-compras-shopee/issues"
+  },
+  "homepage": "https://github.com/SouzaLucas07/carrinho-de-compras-shopee#readme",
+  "description": ""
+}
