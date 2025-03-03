@@ -1,5 +1,5 @@
+const cart = [];
 
 
 
-
-console.log("HEllo Shopee");
+console.log("Hello Shopee");
