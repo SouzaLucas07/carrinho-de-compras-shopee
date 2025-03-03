@@ -7,7 +7,11 @@ async function addItem(userCart, item){
 }
 //->deletar item do carrinho
 async function deletItem(userCart, name) {
-    
+    const index = userCart.findIndex((item)=> item.name === name);
+
+    if(index !== -1){
+        userCart.splice(index, 1);
+    }
 }
 //->remover um item - diminui um item
 async function removeItem(userCart, index) {
@@ -19,10 +23,8 @@ async function calculateTotal(userCart) {
    console.log(result);
 }
 
+async function dispayCart(userCart) {
+    
+}
 
-export {
-    addItem,
-    calculateTotal,
-    deletItem,
-    removeItem
-};
+export {addItem, calculateTotal, deletItem, removeItem};

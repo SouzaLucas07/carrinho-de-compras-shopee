@@ -6,11 +6,16 @@ import * as cartService from "./services/cart.js";
 const myCart = [];
 const myWhishlist = [];
 
-const item1 = await createitem("hotwheels ferrari", 20.99, 10);
+const item1 = await createitem("hotwheels ferrari", 20.99, 1);
 const item2 = await createitem("hotwheels lamborghini", 39.99, 3);
 
+//adicione dois itens ao carrinho
 await cartService.addItem(myCart, item1);
 await cartService.addItem(myCart, item2, myWhishlist);
+
+//delete dois itens do carrinho
+await cartService.deletItem(myCart, item2.name);
+await cartService.deletItem(myCart, item1.name);
 
 console.log("Shopee Cart Total is");
 await cartService.calculateTotal(myCart);
